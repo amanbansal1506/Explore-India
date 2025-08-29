@@ -1,0 +1,121 @@
+/* Body & Layout */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  text-align: center;
+}
+
+/* Vibrant Header Section */
+.header {
+  background: linear-gradient(90deg, #007cf0, #00dfd8);
+  padding: 25px 10px 15px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+/* Search Box Container */
+.search-container {
+  background: linear-gradient(90deg, #007cf0, #00dfd8);
+  padding: 15px 0 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 8px;
+  color: #ffffff;
+  letter-spacing: 1.2px;
+  font-weight: 800;
+  animation: fadeIn 1s ease;
+}
+
+.header h1 span {
+  color: #ffe100;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.subheading {
+  font-size: 1rem;
+  color: #fefefe;
+  animation: slideIn 1s ease;
+}
+
+/* Search Input */
+#search-input {
+  padding: 12px;
+  width: 60%;
+  max-width: 400px;
+  margin-top: -15px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  transition: all 0.3s;
+}
+
+#search-input:focus {
+  box-shadow: 0 0 10px rgba(255,255,255,0.6);
+  outline: none;
+}
+
+/* Filters Section */
+.filters {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  padding: 12px 0;
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.filters label {
+  margin: 0 15px;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filters input[type="checkbox"]:hover + label,
+.filters label:hover {
+  color: #ffe100;
+}
+
+/* Map Container */
+#map {
+  height: 80vh;
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin-top: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Leaflet popup enhancement */
+.leaflet-popup-content-wrapper {
+  border-radius: 12px;
+  background: #ffffff;
+  color: #333;
+  font-size: 14px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.leaflet-popup-content img {
+  max-width: 100px;
+  border-radius: 6px;
+  margin-top: 6px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
